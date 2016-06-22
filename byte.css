@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Liberation Mono';
+	src: url('liberation.ttf') format('truetype');
+}
+
 body {
+	font-size: 16px;
+	line-height: 1.5em;
+
+	font-family: 'Liberation Mono', monospace;
+
+	width: 40em;
 	margin: 0 auto;
 }
