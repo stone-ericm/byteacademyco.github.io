@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Liberation Mono';
-	src: url('fonts/liberation.ttf') format('truetype');
+	src: url('./fonts/liberation.ttf') format('truetype');
 }
 
 body {
@@ -25,7 +25,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-header a { text-decoration: underline; }
+header a, colophon a, questions a { text-decoration: underline; }
 .youtube { color: red; }
 
 @media (max-width:640px) {
