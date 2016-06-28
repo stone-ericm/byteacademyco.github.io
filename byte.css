@@ -10,12 +10,16 @@ body {
 	font-family: 'Liberation Mono', monospace;
 
 	width: 40em;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 
 h3 {
 	margin-top: 20px;
 	margin-bottom: 8px;
+}
+
+a {
+	color: black;
 }
 
 @media (max-width:640px) {
