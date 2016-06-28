@@ -1,2 +1,5 @@
 # byteacademyco.github.io
-The instructor's opinionated take on what our website should look like.
+
+The home page of the Byte Academy instructors.
+
+(Former students can also edit this repo.)
