@@ -33,7 +33,7 @@ header a, colophon a, questions a, content a { text-decoration: underline; }
 		font-size: 16px;
 	}
 }
-@media (min-width:641px max-width:1366px) {
+@media (min-width:641px) and (max-width:1366px) {
 	body {
 		font-size: 22px;
 	}
