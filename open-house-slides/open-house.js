@@ -27,22 +27,31 @@ o.l.onKeyDown = function(event) {
 
 // HANDLERS
 o.h.nextSlide = function() {
-	console.log('next');
+	if (o.current +1 === o.slides.length) return true;
+	o.slides[o.current].classList.add('hidden');
+	o.current++;
+	o.slides[o.current].classList.remove('hidden');
 	return true;
 }
 o.h.prevSlide = function() {
-	console.log('prev');
+	if (o.current === 0) return true;
+	o.slides[o.current].classList.add('hidden');
+	o.current--;
+	o.slides[o.current].classList.remove('hidden');
 	return true;
 }
 o.h.firstSlide = function() {
-	console.log('first');
+	o.slides[o.current].classList.add('hidden');
+	o.current = 0;
+	o.slides[o.current].classList.remove('hidden');
 	return true;
 }
 o.h.lastSlide = function() {
-	console.log('last');
+	o.slides[o.current].classList.add('hidden');
+	o.current = o.slides.length - 1;
+	o.slides[o.current].classList.remove('hidden');
 	return true;
 }
-// NOTES TO SELF REMEMBER ADD / REMOVE
 
 // UTILITIES
 o.u.buildSlides = function() {
