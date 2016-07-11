@@ -1,0 +1,21 @@
+body {
+	padding: 0;
+	margin: 0 auto;
+
+	font-size: 24px;
+	width: 40em;
+
+	background-color: lightcyan;
+
+	color: navy;
+	font-family: monospace;
+	text-align: center;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+#student, #topic {
+	font-weight: bold;
+}
