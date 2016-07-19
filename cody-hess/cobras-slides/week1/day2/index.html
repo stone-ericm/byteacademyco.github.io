@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BA - Week 1, Day 2</title>
+	<link href='../../favicon.ico' type='image/x-icon' rel='icon'>
+	<link href='../../slides.css' type='text/css' rel='stylesheet'>
+	<script src='../../open-house.js'></script>
+</head>
+
+<body>
+<slide id="week1-day2">
+	<h1>Week 1, Day 2</h1>
+	<p>dictionaries</p>
+	<p>`import`</p>
+	<p>`datetime`</p>
+	<p>`with`</p>
+	<p>file i/o</p>
+	<p>recursion</p>
+</slide>
+<slide id="dictionaries" class="hidden">
+	<h1>dictionaries</h1>
+	<p>comma separated key: value pairs, enclosed by curly braces</p>
+	<p>key is a string</p>
+	<p>access by key, not by index</p>
+	<pre class="half">
+example_dict = {
+	'e6420': 'latitude',
+	'X240': 'thinkpad',
+	'S215': 'ideapad'
+}
+	</pre>
+</slide>
+<slide id="import" class="hidden">
+	<h1>import</h1>
+	<p>import external code</p>
+	<pre class="half">
+import datetime
+import my_other_file
+	</pre>
+	<p>We'll learn about `pip` soon.</p>
+</slide>
+<slide id="datetime" class="hidden">
+	<h1>datetime</h1>
+	<p>dates are the biggest PITA in all of programming</p>
+	<p>`import datetime`</p>
+	<p>`pydoc3 datetime`</p>
+	<p>`import datetime; dir(datetime)` in REPL</p>
+	<p>`help(datetime.time)` in REPL</p>
+</slide>
+<slide id="with-and-files" class="hidden">
+	<h1>`with` and files</h1>
+	<p>For now, understand `with` as "opens a file safely."</p>
+	<p>Also, understand `with` (falsely) as "the only way to open a file."</p>
+	<pre class="half">
+with open ('<filename.txt>') as my_file:
+	# do stuff
+	</pre>
+</slide>
+<slide id="recursion" class="hidden">
+	<h1>recursion</h1>
+	<p>"Recursion" is when a function calls itself.</p>
+	<p>Don't be afraid of this one.</p>
+	<p>Learn by doing.</p>
+	<p>I'm willing to help a lot with this today.</p>
+</slide>
+</body>
+
+</html>

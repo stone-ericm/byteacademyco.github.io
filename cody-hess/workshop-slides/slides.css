@@ -1,0 +1,34 @@
+@font-face {
+	src: url('/fonts/comic-neue.ttf');
+	font-family: comic-neue;
+}
+
+/* TAG */
+body {
+	font-family: comic-neue, monospace;
+	width: 40em;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 1.5em;
+}
+h1, h3 {
+	text-align: center;
+}
+slide {
+	text-align: center;
+	margin: 2rem;
+}
+pre {
+	text-align: left;
+	margin: 2rem 6rem;
+	line-height: 2rem;
+}
+
+/* CLASS */
+.hidden { display: none; }
+.half {
+	width: 20rem;
+	margin: 2rem auto;
+}
+
+/* ID */
