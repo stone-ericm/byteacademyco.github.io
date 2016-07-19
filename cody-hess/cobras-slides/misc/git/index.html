@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>`git` version control</title>
+	<link href='../../favicon.ico' type='image/x-icon' rel='icon'>
+	<link href='../../slides.css' type='text/css' rel='stylesheet'>
+	<script src='../../open-house.js'></script>
+</head>
+
+<body>
+<slide id="git-intro">
+	<h1>git dvcs</h1>
+	<p>distributed version control system</p>
+	<p>source code management</p>
+	<p>`git` is how you collaborate</p>
+	<p>`git` is how you go back in time</p>
+	<p>you *must* become comfortable with `git`</p>
+	<p>push your work every day</p>
+</slide>
+<slide id="git-status" class="hidden">
+	<h1>git status</h1>
+	<p>tells you which changed files are tracked / untracked</p>
+	<p>tracked means these changes will be a part of your next commit</p>
+	<p>tracked files are referred to as "staged"</p>
+	<p>`git status` just gives you information; it doesn't *do* anything</p>
+</slide>
+<slide id="git-checkout-b" class="hidden">
+	<h1>git checkout -b</h1>
+	<p>`git checkout &lt;branch_name&gt;` switches branches</p>
+	<p>`git checkout -b &lt;branch_name&gt;` creates a branches and switches to
+	it</p>
+	<p>the very first thing you do every day is `git checkout -b
+	&lt;branch_name&gt;` to create your own branch on that day's repo</p>
+	<p>a "repo" is a repository of code</p>
+	<p>a "branch" is a set of changes independent of other branches</p>
+</slide>
+<slide id="git-add" class="hidden">
+	<h1>git add</h1>
+	<p>`git add &lt;name_of_file&gt;` stages a file for the next commit</p>
+	<p>`git add .` is a shortcut to stage all changes at, and below, the present
+	working directory</p>
+</slide>
+<slide id="git-commit" class="hidden">
+	<h1>git commit</h1>
+	<p>`git commit` logs all of your staged changes</p>
+	<p>`git commit` will open a text editor for you to enter your commit message</p>
+	<p>your commit message should be a short description of your changes</p>
+	<p>`git commit -m '&lt;your_commit_message&gt;'` is a shortcut to commit with
+	a message in a single command</p>
+</slide>
+<slide id="git-push" class="hidden">
+	<h1>git push</h1>
+	<p>`git push &lt;location&gt; &lt;branch&gt;` copies your branch to another
+	location</p>
+	<p>for now, your location will always be "origin"</p>
+	<p>for now, "origin" will always mean GitHub</p>
+	<p>do this before you leave every day</p>
+	<p>do this before you leave every day !</p>
+	<p>do this before you leave every day !!!</p>
+</slide>
+<slide id="summary" class="hidden">
+	<h1>summary</h1>
+	<p>`git checkout -b &lt;your_name&gt;` for every new repo</p>
+	<p>`git add &lt;file_name&gt;`, `git commit -m '&lt;your_commit_message&gt;'`,
+	frequently while you are working</p>
+	<p>`git push origin &lt;your_branch_name&gt;` before you leave</p>
+</slide>
+<slide id="other" class="hidden">
+	<h1>other</h1>
+	<p>`git log` tells the history of commits</p>
+	<p>`git fetch`, `git merge`, `git pull` are commands we will learn later</p>
+</slide>
+</body>
+
+</html>
