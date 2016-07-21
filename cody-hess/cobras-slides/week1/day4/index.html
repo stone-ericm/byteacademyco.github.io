@@ -26,112 +26,30 @@
 	<p>type casting</p>
 	<p>run your code</p>
 </slide>
-<slide id="variable" class="hidden">
-	<h1>variable</h1>
-	<p>a variable is a bucket that holds stuff</p>
-	<p>a variable is a name you make up that exists now because it holds
-	something</p>
+<slide id="chr-ord-input" class="hidden">
+	<h1>Today's BIFs</h1>
+	<p>BIF: "built in function"</p>
+	<p>`chr()`, `ord()`, `input()`</p>
+	<p>Remember to catch the return value, aka assign it to a variable or a
+	property.</p>
+	<p>`input()` always returns a string.</p>
 </slide>
-<slide id="dir" class="hidden">
-	<h1>dir()</h1>
-	<pre class="half">>>> dir()</pre>
-	<p>`dir` is a function that lists the namespace of the current scope</p>
-</slide>
-<slide id="namespace" class="hidden">
-	<h1>Namespace</h1>
-	<p>The *namespace* is everything that Python knows about.</p>
-	<p>Don't worry about scope yet.</p>
-</slide>
-<slide id="declare-and-assign" class="hidden">
-	<h1>Declare and Assign</h1>
-	<p>*Declare* to the computer: "This bucket exists now."</p>
-	<p>*Assign* a value into the bucket.</p>
+<slide id="inheritance" class="hidden">
+	<h1>Inheritance</h1>
+	<p>A "child" class has all of the properties and methods of its "parent"
+	class, plus its own.</p>
+	<p>The name of the parent class goes into the parentheses of the child class
+	definition.</p>
 	<pre class="half">
-x = 55
-x = [1, 2, 3, 4]
-	</pre>
-	<p>Python performs declaration and assignment simultaneously.</p>
-</slide>
-<slide id="snake-case" class="hidden">
-	<h1>snake_case</h1>
-	<p>The pythonic naming convention for variables is called "snake case".</p>
-	<p>lowercase words separated by underscores</p>
-	<pre class="half">
-long_variable_name = 254
-name_of_a_cat = "Socks"
+class FreeFlyALTA(Drone):
+    pass
 	</pre>
 </slide>
-<slide id="types" class="hidden">
-	<h1>Types</h1>
-	<p>strings, integers, floats, booleans</p>
-	<p>float means decimal</p>
-	<p>boolean means True/False</p>
-	<pre class="half">
-example_string = "Hi Mom!"
-example_integer = 1234567
-example_float = 123.567
-example_boolean = True
-	</pre>
-</slide>
-<slide id="operators" class="hidden">
-	<h1>Operators</h1>
-	<p>mathematical operators do math</p>
-	<pre class="half">      + - * / %</pre>
-	<p>comparison operators return True or False</p>
-	<pre class="half">   == != > >= < <=</pre>
-	<p>logical operators chain expressions</p>
-	<pre class="half">      not and or</pre>
-</slide>
-<slide id="if-else" class="hidden">
-	<h1>Flow - If / Else</h1>
-	<p>your code is a river</p>
-	<p>it can fork</p>
-	<p>`if` will or will not execute code depending on the value of a boolean
-	condition</p>
-	<p>`else` happens if `if` did not</p>
-	<p>if you need more ifs before the else, `elif`</p>
-</slide>
-<slide id="useful-bifs" class="hidden">
-	<h1>Useful BIFS</h1>
-	<p>BIF: built-in function</p>
-	<p>Python does it for you.</p>
-	<p>`len()`, `pop()`, `append()`, `split()`</p>
-</slide>
-<slide id="for-loop" class="hidden">
-	<h1>For Loop</h1>
-	<p>iterate through an "iterable"</p>
-	<p>a list is an iterable</p>
-	<pre class="half">
-for i in [1, 2, 3, 4]:
-	print 2 * i
-
-for i in range(8):
-	print 15 - i
-	</pre>
-</slide>
-<slide id="while-loop" class="hidden">
-	<h1>While Loop</h1>
-	<p>keep going until a condition is met</p>
-	<pre class="half">
-i = 0
-while i != 10:
-	print(i)
-	i += 1
-	</pre>
-	<p>make sure the condition gets met</p>
-	<p>NASA doesn't use while loops.</p>
-</slide>
-<slide id="functions" class="hidden">
-	<h1>Functions</h1>
-	<p>functions do stuff</p>
-	<p>functions can do stuff lots of times</p>
-	<p>`def` keyword, function name, parentheses, colon</p>
-	<p>"parameters" within the parentheses</p>
-	<pre class="half">
-def multiply_by_four(num):
-	return num * 4
-	</pre>
-	<p>functions should `return` a value</p>
+<slide id="super" class="hidden">
+	<h1>super()</h1>
+	<p>Tom will lecture about `super()`.</p>
+	<p>Tom is the resident OOP guru.</p>
+	<p>`cowsay Tom is a great man.`</p>
 </slide>
 </body>
 
