@@ -3,99 +3,111 @@
 
 <head>
 	<title>BA - Workshops</title>
-	<link href="favicon.ico" type="image/x-icon" rel="icon">
-	<link href="slides.css" type="text/css" rel="stylesheet">
-	<style>
-body { text-align: center; }
-a {
-	text-decoration: none;
-	color: rebeccapurple;
-}
-	</style>
+	<link href="../favicon.ico" type="image/x-icon" rel="icon">
+	<link href="../slides.css" type="text/css" rel="stylesheet">
+	<script src="../open-house.js"></script>
 </head>
 
 <body>
-	<h1>Cobras Slides</h1>
-	<div id="culture">
-		<p><a href="week1/day0">Welcome</a></p>
-	</div>
-	<div id="culture">
-		<p><a href="misc/git">git</a></p>
-	</div>
-	<div id="week-1">
-		<p><a href="week1/day1">week1-day1</a></p>
-		<p><a href="week1/day2">week1-day2</a></p>
-	</div>
-	<!--
-		<p>w-1-d-2</p>
-		<p>w-1-d-3</p>
-		<p>w-1-d-4</p>
-		<p>w-1-d-5</p>
-	<div id="week-2">
-		<p>w-2-d-0</p>
-		<p>w-2-d-1</p>
-		<p>w-2-d-2</p>
-		<p>w-2-d-3</p>
-		<p>w-2-d-4</p>
-		<p>w-2-d-5</p>
-	</div>
-	<div id="week-3">
-		<p>w-3-d-0</p>
-		<p>w-3-d-1</p>
-		<p>w-3-d-2</p>
-		<p>w-3-d-3</p>
-		<p>w-3-d-4</p>
-		<p>w-3-d-5</p>
-	</div>
-	<div id="week-4">
-		<p>w-4-d-0</p>
-		<p>w-4-d-1</p>
-		<p>w-4-d-2</p>
-		<p>w-4-d-3</p>
-		<p>w-4-d-4</p>
-		<p>w-4-d-5</p>
-	</div>
-	<div id="week-5">
-		<p>w-5-d-0</p>
-		<p>w-5-d-1</p>
-		<p>w-5-d-2</p>
-		<p>w-5-d-3</p>
-		<p>w-5-d-4</p>
-		<p>w-5-d-5</p>
-	</div>
-	<div id="week-6">
-		<p>w-6-d-0</p>
-		<p>w-6-d-1</p>
-		<p>w-6-d-2</p>
-		<p>w-6-d-3</p>
-		<p>w-6-d-4</p>
-		<p>w-6-d-5</p>
-	</div>
-	<div id="week-7">
-		<p>w-7-d-0</p>
-		<p>w-7-d-1</p>
-		<p>w-7-d-2</p>
-		<p>w-7-d-3</p>
-		<p>w-7-d-4</p>
-		<p>w-7-d-5</p>
-	</div>
-	<div id="week-8">
-		<p>w-8-d-0</p>
-		<p>w-8-d-1</p>
-		<p>w-8-d-2</p>
-		<p>w-8-d-3</p>
-		<p>w-8-d-4</p>
-		<p>w-8-d-5</p>
-	</div>
-	<div id="week-9">
-		<p>w-9-d-0</p>
-		<p>w-9-d-1</p>
-		<p>w-9-d-2</p>
-		<p>w-9-d-3</p>
-		<p>w-9-d-4</p>
-		<p>w-9-d-5</p>
-	</div>
-	-->
+<slide id="introduction">
+	<h1>PHP</h1>
+	<p>"Personal Home Page" Tools</p>
+	<p>PHP: Hypertext Preprocessor</p>
+	<p>It's a *recursive backronym* lol.</p>
+	<p>originally written in 1994 to connect web forms to databases</p>
+</slide>
+<slide id="php-is-chaos" class="hidden">
+	<h1>PHP is Chaos</h1>
+	<p>Rasmus Lerdorf (creator of PHP)</p>
+	<p>"I have absolutely no idea how to write a programming language."</p>
+	<p>---</p>
+	<p>In some very early versions of PHP the length of function names was used
+	internally as a hash function, so names were chosen to improve the
+	distribution of hash values.</p>
+	<p>PHP is the opposite of Tom.</p>
+</slide>
+<slide id="php-is-fast" class="hidden">
+	<h1>PHP is FAST</h1>
+	<p>When used as intended, PHP is usually the fastest interpreted language for
+	stateful web applications.</p>
+	<p>Think of PHP as a gigantic library of functions that are thin wrappers
+	around compiled C code.</p>
+	<p>PHP 7 is a 100% speed improvement over PHP 5.</p>
+	<p>When you try to get fancy, PHP slows down *big time*.</p>
+</slide>
+<slide id="sites-using-php" class="hidden">
+	<h1>Sites Using PHP</h1>
+	<p>WordPress</p>
+	<p>Facebook</p>
+	<p>Wikipedia</p>
+	<p>Etsy</p>
+</slide>
+<slide id="web-phase-one" class="hidden">
+	<h1>Web 1.0</h1>
+	<p>web server serves static files mapped directly to a file system</p>
+	<p>URL is *literal* location of a resource</p>
+	<p>dancing hamsters</p>
+	<p>Lycos, Altavista, Yahoo</p>
+	<p>Geocities, Angelfire</p>
+</slide>
+<slide id="web-phase-two" class="hidden">
+	<h1>Web 1.5</h1>
+	<p>common gateway interface<p>
+	<p>server is configured with a directory that can execute scripts</p>
+	<p>`cgi-bin`</p>
+	<p>heyday of Perl programming language</p>
+	<p>Slashdot, LiveJournal, WikiWikiWeb</p>
+</slide>
+<slide id="web-phase-three" class="hidden">
+	<h1>"Web 2.0"</h1>
+	<p>term coined by Tim O'Reilly</p>
+	<p>"user generated content"</p>
+	<p>web server "modules" execute interpreted languages directly</p>
+	<p>rise of PHP</p>
+	<p>Facebook, Digg</p>
+</slide>
+<slide id="web-phase-four" class="hidden">
+	<h1>Web 2.5</h1>
+	<p>jQuery Era</p>
+	<p>AJAX starts to be a thing</p>
+	<p>"web frameworks"</p>
+	<p>Rails, Django</p>
+	<p>URL / filesystem association is arbitrary</p>
+	<p>fast-CGI</p>
+	<p>everything new that's not WordPress</p>
+</slide>
+<slide id="web-phase-five" class="hidden">
+	<h1>Web 3.0</h1>
+	<p>not a real term</p>
+	<p>web sockets</p>
+	<p>web is a universal platform for everything</p>
+	<p>Go, NodeJS</p>
+</slide>
+<slide id="intermission" class="hidden">
+	<h1>Breath</h1>
+	<p>We're about to speak (lightly) about programming.</p>
+</slide>
+<slide id="basics" class="hidden">
+	<h1>PHP Basics</h1>
+	<p>templates</p>
+	<p>globals</p>
+	<p>scalars</p>
+	<p>associative arrays</p>
+	<p>built-in functions</p>
+</slide>
+<slide id="wordpress" class="hidden">
+	<h1>WordPress</h1>
+	<p>"content management system" not "web framework"</p>
+	<p>shared hosting</p>
+	<p>25% of all web sites</p>
+</slide>
+<slide id="when-to-use" class="hidden">
+	<h1>When to use PHP</h1>
+	<p>simple, *stateless* applications</p>
+	<p>you need to easily hire developers outside of a major city</p>
+	<p>your stateless application needs to be FAST</p>
+	<p>you don't care about pretty (or sane) code</p>
+</slide>
 </body>
 
 </html>
