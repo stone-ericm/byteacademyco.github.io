@@ -15,6 +15,14 @@
 	<p>shell level rc files dictate the behavior of your applications</p>
 	<p>shell commands check ~ for an rc file whenever they run</p>
 </slide>
+<slide id="system-level" class="hidden">
+	<h1>system level</h1>
+	<p>runcom</p>
+	<p>portmanteau</p>
+	<p>"run commands"</p>
+	<p>in Linux, `/etc/rc` replaced by run-levels and then by `systemd`</p>
+	<p>*BSD still uses `/etc/rc`</p>
+</slide>
 <slide id="shell-level" class="hidden">
 	<h1>shell level</h1>
 	<p>.profile .vimrc .nanorc .tmuxrc</p>
@@ -24,14 +32,24 @@
 </slide>
 <slide id="nano-rc" class="hidden">
 	<h1>.nanorc</h1>
+	<p>man nanorc</p>
+	<pre class="half">
+set autoindent
+set const
+
+# set nohelp
+# set tabstospaces
+	</pre>
 </slide>
 <slide id="bash-rc" class="hidden">
 	<h1>.profile</h1>
-</slide>
-<slide id="system-level">
-	<h1>system level</h1>
-	<p>runcom</p>
-	<p>"run commands"</p>
+	<p>environment variables</p>
+	<p>PS1</p>
+	<p>man bash; /PROMPTING</p>
+	<pre class="half">
+alias lsl="ls -l"
+export PS1="\A - \W (= "
+	</pre>
 </slide>
 <slide id="nix-is-awesome" class="hidden">
 	<h1>*nix is Awesome</h1>
